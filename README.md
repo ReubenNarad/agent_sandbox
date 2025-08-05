@@ -1,24 +1,42 @@
-# agent_sandbox
+# Game Hub & Mini-games
 
-## Ball in a Rotating Box Simulation
+This repository hosts a Flask‑based game hub and a collection of Pygame mini‑games: Chess, Rotating Box, and Pong.
 
-This directory provides a simulation of a ball moving inside a rotating square box using Pygame and Pymunk.
+## Requirements
 
-### Requirements
-- Python 3
-- Pygame
-- Pymunk
+- Python 3.8+
+- Pygame 2.1.2
 
-### Usage
-Run the simulation with:
+## Installation
+
+Install dependencies:
+
 ```
-python rotating_box_simulation.py
+pip install -r requirements.txt
 ```
 
-### Features
-- Spawns three balls inside the rotating box, each with a different mass (0.5, 1.0, and 2.0)
-- Milder gravity for smoother, more “chill” motion (gravity = 1000)
-- Box center moves in a smaller (50% max) circular path opposite the rotation, at faster angular speed (1.5 rad/s)
-- Smaller rotating box (size = 400)
-- Box rotation speed increased to 1.5 rad/s for a faster spin
-- Enhanced visuals: background color, colored balls, dynamic wall hues, and FPS display
+## Usage
+
+### Run the game hub (Flask site)
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+### Run the individual games
+From the project root:
+```bash
+python -m chess.main       # launch the chess Pygame app
+python rotating_box/rotating_box_simulation.py  # launch the rotating box Pygame app
+python pong/pong.py        # launch the Pong Pygame app
+```
+
+## Features
+
+- Move generation for all standard pieces, including pawn promotion.
+- Basic AI using negamax (minimax) with alpha-beta pruning.
+- Highlights selected square and shows simple board UI.
+
+## Limitations
+
+- Castling and en passant are not supported.

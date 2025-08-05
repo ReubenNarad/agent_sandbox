@@ -1,3 +1,8 @@
 - always allow doesnt really work?
-- I get "working" but why "waiting for logs..."?
+- I get "working" but why "waiting for logs..."?      <- could use separator between the two
 - [Working core::codex] message. The :: syntax looks rusty, most ppl don't know rust. Should the user see that?
+- I like auto compact 🤷‍♂️
+- I want /continue
+- I want to paste images
+- codex mini runs out of context fast! Model limitation?
+- ctrl + j newline is unusual...?
