@@ -1,0 +1,3 @@
+- always allow doesnt really work?
+- I get "working" but why "waiting for logs..."?
+- [Working core::codex] message. The :: syntax looks rusty, most ppl don't know rust. Should the user see that?
